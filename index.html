@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>plant</title>
+        <link rel="icon" href="watering.png">
+    </head>
+    <style>
+    
+        * {
+            cursor: url('water.png'), auto;
+            text-align: center; 
+            margin-top: 25vh;
+        }
+
+        a {
+            background-image: url(plant.png);
+            padding: 64px 32px 46px;
+        }
+
+        a:active  {
+            background-image: url(growing.gif);
+            cursor: url('watering.png'), auto;
+        }
+
+        .dead {
+            background-image: url(dead.gif);
+        }
+
+        .dead:active {
+            background-image: url(dead.png);
+        }
+
+    </style>
+    <body>
+        <a onclick="this.className='dead'">
+    </body>
+</html>
