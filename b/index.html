@@ -1,1 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta charset="UTF-8">
+        <title>plant</title>
+        <link rel="icon" href="watering.png">
+    </head>
+    <style>
+    
+        * {
+            cursor: url('water.png'), auto;
+            text-align: center; 
+            margin-top: 25vh;
+            font-family: 'Courier New', monospace;
+        }
 
+        a {
+            background-image: url(plant.png);
+            padding: 64px 32px 46px;
+        }
+
+        a:active  {
+            background-image: url(growing.gif);
+            cursor: url('watering.png'), auto;
+        }
+
+        a ~ p:after {
+            content: "Hover above the plant to water it!";
+        }
+
+        a:hover ~ p:after {
+            content: "...";
+        }
+
+        .dead {
+            background-image: url(dead.gif);
+        }
+
+        .dead:active {
+            background-image: url(dead.png);
+        }
+
+        .dead ~ p:after {
+            content: "Oh noo! ): The plant is dead";
+        }
+
+        .dead:active ~ p:after {
+            content: "Yeah.. thats not going to work ):";
+        }
+
+    </style>
+    <body>
+        <a onclick="this.className='dead'"></a><p></p>
+        <!--Made by Rogier!-->
+    </body>
+</html>
